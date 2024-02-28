@@ -65,7 +65,7 @@ download_release() {
 	arch=$(get_arch)
 	platform=$(get_platform)
 
-	url="$GH_REPO/archive/otelcol_${version}_${platform}_${arch}.tar.gz"
+	url="$GH_REPO/releases/download/v${version}/otelcol_${version}_${platform}_${arch}.tar.gz"
 
 	echo "* Downloading $TOOL_NAME release $version..."
 	curl "${curl_opts[@]}" -o "$filename" -C - "$url" || fail "Could not download $url"
