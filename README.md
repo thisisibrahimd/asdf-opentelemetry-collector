@@ -22,22 +22,22 @@
 Plugin:
 
 ```shell
-asdf plugin add opentelemetry-collector
+asdf plugin add otelcol
 # or
-asdf plugin add opentelemetry-collector https://github.com/thisisibrahimd/asdf-opentelemetry-collector.git
+asdf plugin add otelcol https://github.com/thisisibrahimd/asdf-opentelemetry-collector.git
 ```
 
 opentelemetry-collector:
 
 ```shell
 # Show all installable versions
-asdf list-all opentelemetry-collector
+asdf list-all otelcol
 
 # Install specific version
-asdf install opentelemetry-collector latest
+asdf install otelcol@latest
 
 # Set a version globally (on your ~/.tool-versions file)
-asdf global opentelemetry-collector latest
+asdf global otelcol@latest
 
 # Now opentelemetry-collector commands are available
 otelcol --help
