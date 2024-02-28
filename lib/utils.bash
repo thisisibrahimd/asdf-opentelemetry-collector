@@ -33,8 +33,8 @@ get_arch() {
 
 	case "$(uname -m)" in
 	x86_64 | x86-64 | x64 | amd64) arch="amd64" ;;
-  aarch64 | arm64) arch="arm64" ;;
-  *) fail "Unsupported architecture" ;;
+	aarch64 | arm64) arch="arm64" ;;
+	*) fail "Unsupported architecture" ;;
 	esac
 
 	echo $arch
@@ -43,10 +43,10 @@ get_arch() {
 get_platform() {
 	local platform
 
-  case "$OSTYPE" in
-  darwin*) platform="darwin" ;;
-  linux*) platform="linux" ;;
-  *) fail "Unsupported platform" ;;
+	case "$OSTYPE" in
+	darwin*) platform="darwin" ;;
+	linux*) platform="linux" ;;
+	*) fail "Unsupported platform" ;;
 	esac
 
 	echo $platform
